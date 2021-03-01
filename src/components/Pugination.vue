@@ -86,7 +86,7 @@ export default {
                 nextRef.value.disabled = true;
                 return
             }
-            if (currentPage === 1) {
+            if (currentPage === 0) {
                 prevRef.value.disabled = true;
                 return
             }
@@ -126,7 +126,7 @@ export default {
         function prevPage() {
             currentPage--;
             nextPrevController();
-            if (currentPage - 1 === 0) {
+            if (currentPage === 1) {
                 prevRef.value.disabled = true;
                 return
             }
